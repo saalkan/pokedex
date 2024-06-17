@@ -3,7 +3,7 @@
 
 .pokedex_desktop {
   display: grid;
-  grid-template: repeat(26, 25px) / repeat(26, 25px);
+  grid-template: repeat(26, min(25px, 4vw)) / repeat(26, min(25px, 4vw));
 }
 
 .pokedex_mobile {
@@ -277,7 +277,7 @@
 
 /*media query*/
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   
   .pokedex_desktop {
     display: none;
