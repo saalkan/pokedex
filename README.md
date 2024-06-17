@@ -5,5 +5,7 @@
 2. Mobile layout
 3. Responsive
 4. Pokemon API
+5. a cool background?
+6. cleanup
 
 Fikir: Pelin Karakoca
