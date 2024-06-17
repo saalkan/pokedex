@@ -1,9 +1,13 @@
 /* Open Props */
 @import "https://unpkg.com/open-props";
 
-.pokedex {
+.pokedex_desktop {
   display: grid;
   grid-template: repeat(26, 25px) / repeat(26, 25px);
+}
+
+.pokedex_mobile {
+  display: none;
 }
 
 .base {
@@ -268,4 +272,201 @@
 .buttons-right__teal-right {
   background: var(--teal-12);
   grid-area: 23 / 21 / span 2 / span 4;
+}
+
+
+/*media query*/
+
+@media (max-width: 500px) {
+  
+  .pokedex_desktop {
+    display: none;
+  }
+
+  .pokedex_mobile {
+    display: grid;
+    grid-template: repeat(26, 25px) / repeat(14, 25px);
+  }
+
+  .m-base {
+    background: var(--red-8);
+    grid-area: 2 / 2 / span 24 / span 13;
+  }
+
+  /*border*/
+
+  .m-border__top {
+    background: black;
+    grid-area: 1 / 2 / span 1 / span 13; 
+  }
+
+  .m-border__bottom {
+    background: black;
+    grid-area: 26 / 2 / span 1 / span 13;
+  }
+
+  .m-border__left {
+    background: black;
+    grid-area: 2 / 1 / span 24 / span 1;
+  }
+
+  .m-border__detail1 {
+    background: black;
+    grid-area: 2 / 14 / span 3 / span 1;
+  }
+
+  /*blue button*/
+
+  .m-blue-button__bg {
+    background: var(--blue-9);
+    grid-area: 3 / 3 / span 3 / span 3;
+  }
+
+  .m-blue-button__column {
+    background: var(--blue-4);
+    grid-area: 3 / 4 / span 3 / span 1;
+  }
+
+  .m-blue-button__row {
+    background: var(--blue-4);
+    grid-area: 4 / 3 / span 1 / span 3;
+  }
+
+  .m-blue-button__center {
+    background: var(--gray-4);
+    grid-area: 4 / 4 / span 1 / span 1;
+  }
+
+  /*red yellow green*/
+
+  .m-ryg__red {
+    background: var(--red-10);
+    grid-area: 3 / 8 / span 1 / span 1;
+  }
+
+  .m-ryg__yellow {
+    background: var(--yellow-4);
+    grid-area: 3 / 9 / span 1 / span 1;
+  }
+
+  .m-ryg__green {
+    background: var(--green-7);
+    grid-area: 3 / 10 / span 1 / span 1;
+  }
+
+  /*red detail*/
+
+  .m-shadow__top {
+    background: var(--red-12);
+    grid-area: 5 / 9 / span 1 / span 4;
+  }
+
+  .m-shadow__pixel {
+    background: var(--red-12);
+    grid-area: 6 / 8 / span 1 / span 1;
+  }
+
+  .m-shadow__bottom {
+    background: var(--red-12);
+    grid-area: 7 / 2 / span 1 / span 6;
+  }
+
+  /*big screen*/
+
+  .m-big-screen__bg {
+    background: var(--gray-4);
+    grid-area: 9 / 3 / span 10 / span 9;
+  }
+
+  .m-big-screen__display {
+    background: black;
+    grid-area: 10 / 4 / span 7 / span 7;
+  }
+
+  .m-big-screen__pixel {
+    background: var(--gray-5);
+    grid-area: 18 / 3 / span 1 / span 1;
+  }
+
+  .m-big-screen__button-red {
+    background: var(--red-9);
+    grid-area: 18 / 5 / span 1 / span 1;
+  }
+
+  .m-big-screen__button-gray {
+    background: var(--gray-6);
+    grid-area: 18 / 9 / span 1 / span 2;
+  }
+
+  .m-big-screen__bottom {
+    background: var(--gray-5);
+    grid-area: 19 / 4 / span 1 / span 8;
+  }
+
+  /*mauve blue*/
+
+  .m-mauve-blue__mauve {
+    background: var(--pink-9);
+    grid-area: 21 / 5 / span 1 / span 2;
+  }
+
+  .m-mauve-blue__blue {
+    background: var(--blue-8);
+    grid-area: 21 / 7 / span 1 / span 2;
+  }
+
+  /*bottom buttons, left*/
+
+  .m-buttons-left__black {
+    background: black;
+    grid-area: 22 / 3 / span 1 / span 1;
+  }
+
+  .m-buttons-left__green {
+    background: var(--green-6);
+    grid-area: 23 / 5 / span 2 / span 3;
+  }
+
+  .m-buttons-left__column {
+    background: var(--teal-12);
+    grid-area: 22 / 10 / span 3 / span 1;
+  }
+
+  .m-buttons-left__row {
+    background: var(--teal-12);
+    grid-area: 23 / 9 / span 1 / span 3;
+  }
+
+  .m-buttons-left__center {
+    background: black;
+    grid-area: 23 / 10 / span 1 / span 1;
+  }
+
+  /*middle detail*/
+
+  .m-middle__column {
+    background: var(--red-12);
+    grid-area: 5 / 14 / span 21 / span 1;
+  }
+
+  .m-middle__brown-top {
+    background: var(--pink-12);
+    grid-area: 7 / 13 / span 1 / span 1;
+  }
+
+  .m-middle__black-top {
+    background: black;
+    grid-area: 7 / 14 / span 1 / span 1;
+  }
+
+  .m-middle__brown-bottom {
+    background: var(--pink-12);
+    grid-area: 23 / 13 / span 1 / span 1;
+  }
+
+  .m-middle__black-bottom {
+    background: black;
+    grid-area: 23 / 14 / span 1 / span 1;
+  }
+
 }
