@@ -42,7 +42,7 @@
 
       <!--big screen-->
       <div class="big-screen__bg"></div>
-      <div class="big-screen__display"></div>
+      <div class="big-screen__display"><img src="" id="pokemon-image" style="display: none; width: 150px; margin: auto;"/></div>
       <div class="big-screen__pixel"></div>
       <div class="big-screen__button-red"></div>
       <div class="big-screen__button-gray"></div>
@@ -54,7 +54,7 @@
 
       <!--bottom buttons, left-->
       <div class="buttons-left__black"></div>
-      <div class="buttons-left__green"></div>
+      <div class="buttons-left__green"><button onclick="fetch_pokemon()" style="background: none; border: none; width: 100%; height: 100%; cursor: pointer;">RAND</button></div>
       <div class="buttons-left__column"></div>
       <div class="buttons-left__row"></div>
       <div class="buttons-left__center"></div>
@@ -136,5 +136,8 @@
       <div class="m-middle__black-bottom"></div>
 
     </section>
+
+    <script src="index.js"></script>
+
   </body>
 </html>
