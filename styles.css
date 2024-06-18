@@ -287,7 +287,8 @@ body {
   justify-content: center;
   align-items: center;
   background: black;
-  grid-area: 9 / 16 / span 4 / span 9;  
+  grid-area: 9 / 16 / span 4 / span 9;
+  font-size: clamp(0.5rem, 1.9vw, 0.7rem);
 }
 
 .screen-right__black h2 {
@@ -295,7 +296,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: clamp(0.8rem, 2.7vw, 1.1rem);
+  color: white;
 }
 
 .screen-right__black div {
@@ -305,22 +306,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.screen-right__black div p:first-child {
+.screen-right__black div p {
   border: 5px lime solid;
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.screen-right__black div p:last-child {
-  border: 5px lime solid;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  color: white;
 }
 
 .screen-right__blue {
