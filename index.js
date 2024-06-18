@@ -1,7 +1,5 @@
 // source: https://youtu.be/37vxWr0WgQk
 
-//fetch_pokemon();
-
 async function fetch_pokemon() {
   try {
     const pokemon_id = Math.floor((Math.random() * 1025) + 1);
@@ -12,7 +10,7 @@ async function fetch_pokemon() {
 
     const data = await response.json();
 
-    //image
+    // image
     const pokemon_image = data.sprites.front_default;
     const image_element = document.getElementById(`pokemon-image`);
     image_element.src = pokemon_image;
@@ -171,6 +169,7 @@ async function fetch_pokemon() {
     const gen_element = document.getElementById(`pokemon-gen`);
     gen_element.innerText = `GEN\n${pokemon_gen}`;
   }
+  
   catch (error) {
     console.error(error);
   }

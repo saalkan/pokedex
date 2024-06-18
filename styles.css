@@ -9,7 +9,6 @@
 
 body {
   display: flex;
-  /*border: 10px lime solid;*/
   justify-content: center;
   align-items: center;
   background-image: url('./assets/kirokaze.gif'); /*https://www.behance.net/gallery/36812305/Fishing-gif-animation*/
@@ -18,25 +17,9 @@ body {
 }
 
 .pokedex {
-  /*border: 10px pink solid;*/
   display: grid;
   grid-template: repeat(26, min(25px, 4vw)) / repeat(26, min(25px, 4vw));
 }
-
-/*
-.pokedex_mobile {
-  display: none;
-}
-*/
-
-/*red base*/
-
-/*
-.base {
-  background: var(--red-8);
-  grid-area: 2 / 2 / span 24 / span 24;
-}
-*/
 
 .base__left {
   background: red;
@@ -57,25 +40,6 @@ body {
   background: red;
   grid-area: 7 / 21 / span 19 / span 5;
 }
-
-/*top right white*/
-
-/*
-.top-right__top {
-  background: white;
-  grid-area: 2 / 15 / span 2 / span 11;
-}
-
-.top-right__pixel {
-  background: white;
-  grid-area: 4 / 20 / span 1 / span 1;
-}
-
-.top-right__bottom {
-  background: white;
-  grid-area: 4 / 21 / span 2 / span 5;
-}
-*/
 
 /*border*/
 
@@ -301,7 +265,6 @@ body {
 }
 
 .screen-right__black__outer-div {
-  /*border: 5px lime solid;*/
   flex: 2;
   display: flex;
   flex-direction: row;
@@ -317,8 +280,7 @@ body {
   font-weight: bold;
 }
 
-.screen-right__black p {
-  /*border: 5px lime solid;*/  
+.screen-right__black p { 
   text-align: center;
 }
 
@@ -444,188 +406,5 @@ body {
   .buttons-right__teal-right {
     display: none;
   }  
-
-  /*
-  .pokedex_desktop {
-    display: none;
-  }
-
-  .pokedex_mobile {
-    display: grid;
-    grid-template: repeat(26, 25px) / repeat(14, 25px);
-  }
-
-  .m-base {
-    background: var(--red-8);
-    grid-area: 2 / 2 / span 24 / span 13;
-  }
-
-
-  .m-border__top {
-    background: black;
-    grid-area: 1 / 2 / span 1 / span 13; 
-  }
-
-  .m-border__bottom {
-    background: black;
-    grid-area: 26 / 2 / span 1 / span 13;
-  }
-
-  .m-border__left {
-    background: black;
-    grid-area: 2 / 1 / span 24 / span 1;
-  }
-
-  .m-border__detail1 {
-    background: black;
-    grid-area: 2 / 14 / span 3 / span 1;
-  }
-
-
-  .m-blue-button__bg {
-    background: var(--blue-9);
-    grid-area: 3 / 3 / span 3 / span 3;
-  }
-
-  .m-blue-button__column {
-    background: var(--blue-4);
-    grid-area: 3 / 4 / span 3 / span 1;
-  }
-
-  .m-blue-button__row {
-    background: var(--blue-4);
-    grid-area: 4 / 3 / span 1 / span 3;
-  }
-
-  .m-blue-button__center {
-    background: var(--gray-4);
-    grid-area: 4 / 4 / span 1 / span 1;
-  }
-
-
-  .m-ryg__red {
-    background: var(--red-10);
-    grid-area: 3 / 8 / span 1 / span 1;
-  }
-
-  .m-ryg__yellow {
-    background: var(--yellow-4);
-    grid-area: 3 / 9 / span 1 / span 1;
-  }
-
-  .m-ryg__green {
-    background: var(--green-7);
-    grid-area: 3 / 10 / span 1 / span 1;
-  }
-
-
-  .m-shadow__top {
-    background: var(--red-12);
-    grid-area: 5 / 9 / span 1 / span 4;
-  }
-
-  .m-shadow__pixel {
-    background: var(--red-12);
-    grid-area: 6 / 8 / span 1 / span 1;
-  }
-
-  .m-shadow__bottom {
-    background: var(--red-12);
-    grid-area: 7 / 2 / span 1 / span 6;
-  }
-
-
-  .m-big-screen__bg {
-    background: var(--gray-4);
-    grid-area: 9 / 3 / span 10 / span 9;
-  }
-
-  .m-big-screen__display {
-    background: black;
-    grid-area: 10 / 4 / span 7 / span 7;
-  }
-
-  .m-big-screen__pixel {
-    background: var(--gray-5);
-    grid-area: 18 / 3 / span 1 / span 1;
-  }
-
-  .m-big-screen__button-red {
-    background: var(--red-9);
-    grid-area: 18 / 5 / span 1 / span 1;
-  }
-
-  .m-big-screen__button-gray {
-    background: var(--gray-6);
-    grid-area: 18 / 9 / span 1 / span 2;
-  }
-
-  .m-big-screen__bottom {
-    background: var(--gray-5);
-    grid-area: 19 / 4 / span 1 / span 8;
-  }
-
-
-  .m-mauve-blue__mauve {
-    background: var(--pink-9);
-    grid-area: 21 / 5 / span 1 / span 2;
-  }
-
-  .m-mauve-blue__blue {
-    background: var(--blue-8);
-    grid-area: 21 / 7 / span 1 / span 2;
-  }
-
-
-  .m-buttons-left__black {
-    background: black;
-    grid-area: 22 / 3 / span 1 / span 1;
-  }
-
-  .m-buttons-left__green {
-    background: var(--green-6);
-    grid-area: 23 / 5 / span 2 / span 3;
-  }
-
-  .m-buttons-left__column {
-    background: var(--teal-12);
-    grid-area: 22 / 10 / span 3 / span 1;
-  }
-
-  .m-buttons-left__row {
-    background: var(--teal-12);
-    grid-area: 23 / 9 / span 1 / span 3;
-  }
-
-  .m-buttons-left__center {
-    background: black;
-    grid-area: 23 / 10 / span 1 / span 1;
-  }
-
-
-  .m-middle__column {
-    background: var(--red-12);
-    grid-area: 5 / 14 / span 21 / span 1;
-  }
-
-  .m-middle__brown-top {
-    background: var(--pink-12);
-    grid-area: 7 / 13 / span 1 / span 1;
-  }
-
-  .m-middle__black-top {
-    background: black;
-    grid-area: 7 / 14 / span 1 / span 1;
-  }
-
-  .m-middle__brown-bottom {
-    background: var(--pink-12);
-    grid-area: 23 / 13 / span 1 / span 1;
-  }
-
-  .m-middle__black-bottom {
-    background: black;
-    grid-area: 23 / 14 / span 1 / span 1;
-  }
-  */
+  
 }
