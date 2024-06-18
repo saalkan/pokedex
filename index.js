@@ -56,10 +56,10 @@ async function fetch_pokemon() {
         type_element1.style.color = `red`;
         break;
       case "flying":
-        type_element1.style.color = `aliceblue`;
+        type_element1.style.color = `lightskyblue`;
         break;
       case "ghost":
-        type_element1.style.color = `violet`;
+        type_element1.style.color = `darkviolet`;
         break;
       case "grass":
         type_element1.style.color = `green`;
@@ -77,7 +77,7 @@ async function fetch_pokemon() {
         type_element1.style.color = `fuchsia`;
         break;
       case "rock":
-        type_element1.style.color = `darkgray`;
+        type_element1.style.color = `darkslategray`;
         break;
       case "steel":
         type_element1.style.color = `teal`;
@@ -115,7 +115,7 @@ async function fetch_pokemon() {
         type_element2.style.color = `lightskyblue`;
         break;
       case "/ghost":
-        type_element2.style.color = `violet`;
+        type_element2.style.color = `darkviolet`;
         break;
       case "/grass":
         type_element2.style.color = `green`;
@@ -133,7 +133,7 @@ async function fetch_pokemon() {
         type_element2.style.color = `fuchsia`;
         break;
       case "/rock":
-        type_element2.style.color = `darkgray`;
+        type_element2.style.color = `darkslategray`;
         break;
       case "/steel":
         type_element2.style.color = `teal`;
