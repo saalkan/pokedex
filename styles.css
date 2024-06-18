@@ -1,6 +1,12 @@
 /* Open Props */
 @import "https://unpkg.com/open-props";
 
+* {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   display: flex;
   /*border: 10px lime solid;*/
@@ -228,6 +234,7 @@ body {
 .buttons-left__green {
   background: var(--green-6);
   grid-area: 23 / 5 / span 2 / span 3;
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
 }
 
 .buttons-left__column {
@@ -275,8 +282,45 @@ body {
 /*screens, right*/
 
 .screen-right__black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: black;
-  grid-area: 9 / 16 / span 4 / span 9;
+  grid-area: 9 / 16 / span 4 / span 9;  
+}
+
+.screen-right__black h2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.8rem, 2.7vw, 1.1rem);
+}
+
+.screen-right__black div {
+  border: 5px lime solid;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-right__black div p:first-child {
+  border: 5px lime solid;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-right__black div p:last-child {
+  border: 5px lime solid;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .screen-right__blue {
@@ -326,6 +370,12 @@ body {
   .pokedex {
     display: grid;
     grid-template: repeat(26, min(25px, 5vw)) / repeat(14, min(25px, 5vw));
+  }
+
+  .buttons-left__green {
+    background: var(--green-6);
+    grid-area: 23 / 5 / span 2 / span 3;
+    font-size: 2.7vw;
   }
 
   .base__right-left {

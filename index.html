@@ -2,9 +2,12 @@
   <head>
     <link href="reset.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section class="pokedex_desktop">
+    <section class="pokedex">
       
       <!--red base-->
       <!--<div class="base"></div>-->
@@ -59,7 +62,9 @@
 
       <!--bottom buttons, left-->
       <div class="buttons-left__black"></div>
-      <div class="buttons-left__green"><button onclick="fetch_pokemon()" style="background: none; border: none; width: 100%; height: 100%; cursor: pointer;">RAND</button></div>
+      <div class="buttons-left__green">
+        <button onclick="fetch_pokemon()" style="background: none; border: none; width: 100%; height: 100%; cursor: pointer;">RAND</button>
+      </div>
       <div class="buttons-left__column"></div>
       <div class="buttons-left__row"></div>
       <div class="buttons-left__center"></div>
@@ -72,7 +77,11 @@
       <div class="middle__black-bottom"></div>
 
       <!--screens, right-->
-      <div class="screen-right__black"></div>
+      <div class="screen-right__black">
+        <h2 id="pokemon-name" style="color: white;">crabominable</h2>
+        <div><p id="pokemon-type" style="color: white;">a</p>
+        <p id="pokemon-gen" style="color: white;">a</p></div>
+      </div>
       <div class="screen-right__blue"></div>
 
       <!--black buttons-->
