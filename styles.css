@@ -1,22 +1,60 @@
 /* Open Props */
 @import "https://unpkg.com/open-props";
 
-.pokedex_desktop {
+body {
+  display: flex;
+  /*border: 10px lime solid;*/
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/kirokaze.gif'); /*https://www.behance.net/gallery/36812305/Fishing-gif-animation*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pokedex {
+  /*border: 10px pink solid;*/
   display: grid;
   grid-template: repeat(26, min(25px, 4vw)) / repeat(26, min(25px, 4vw));
 }
 
+/*
 .pokedex_mobile {
   display: none;
 }
+*/
 
+/*red base*/
+
+/*
 .base {
   background: var(--red-8);
   grid-area: 2 / 2 / span 24 / span 24;
 }
+*/
+
+.base__left {
+  background: red;
+  grid-area: 2 / 2 / span 24 / span 12;
+}
+
+.base__right-left {
+  background: red;
+  grid-area: 5 / 15 / span 21 / span 5;
+}
+
+.base__right-column {
+  background: red;
+  grid-area: 6 / 20 / span 20 / span 1;
+}
+
+.base__right-right {
+  background: red;
+  grid-area: 7 / 21 / span 19 / span 5;
+}
 
 /*top right white*/
 
+/*
 .top-right__top {
   background: white;
   grid-area: 2 / 15 / span 2 / span 11;
@@ -31,6 +69,7 @@
   background: white;
   grid-area: 4 / 21 / span 2 / span 5;
 }
+*/
 
 /*border*/
 
@@ -44,9 +83,14 @@
   grid-area: 6 / 26 / span 20 / span 1; 
 }
 
-.border__bottom {
+.border__bottom1 {
   background: black;
-  grid-area: 26 / 2 / span 1 / span 24;
+  grid-area: 26 / 2 / span 1 / span 13; 
+}
+
+.border__bottom2 {
+  background: black;
+  grid-area: 26 / 15 / span 1 / span 11;
 }
 
 .border__left {
@@ -56,12 +100,12 @@
 
 .border__detail1 {
   background: black;
-  grid-area: 2 / 14 / span 2 / span 1;
+  grid-area: 2 / 14 / span 3 / span 1;
 }
 
 .border__detail2 {
   background: black;
-  grid-area: 4 / 14 / span 1 / span 6;
+  grid-area: 4 / 15 / span 1 / span 5;
 }
 
 .border__detail3 {
@@ -277,8 +321,78 @@
 
 /*media query*/
 
-@media (max-width: 450px) {
+@media (max-width: 450px) {  
+
+  .pokedex {
+    display: grid;
+    grid-template: repeat(26, min(25px, 5vw)) / repeat(14, min(25px, 5vw));
+  }
+
+  .base__right-left {
+    display: none;
+  }
   
+  .base__right-column {
+    display: none;
+  }
+  
+  .base__right-right {
+    display: none;
+  }
+
+  .border__right {
+    display: none; 
+  }
+
+  .border__bottom2 {
+    display: none;
+  }
+
+  .border__detail2 {
+    display: none;
+  }
+  
+  .border__detail3 {
+    display: none;
+  }
+  
+  .border__detail4 {
+    display: none;
+  }
+
+  .screen-right__black {
+    display: none;
+  }
+  
+  .screen-right__blue {
+    display: none;
+  }
+
+  .black-button__left {
+    display: none;
+  }
+  
+  .black-button__right {
+    display: none;
+  }
+
+  .buttons-right__gray {
+    display: none;
+  }
+  
+  .buttons-right__yellow {
+    display: none;
+  }
+  
+  .buttons-right__teal-left {
+    display: none;
+  }
+  
+  .buttons-right__teal-right {
+    display: none;
+  }  
+
+  /*
   .pokedex_desktop {
     display: none;
   }
@@ -293,7 +407,6 @@
     grid-area: 2 / 2 / span 24 / span 13;
   }
 
-  /*border*/
 
   .m-border__top {
     background: black;
@@ -315,7 +428,6 @@
     grid-area: 2 / 14 / span 3 / span 1;
   }
 
-  /*blue button*/
 
   .m-blue-button__bg {
     background: var(--blue-9);
@@ -337,7 +449,6 @@
     grid-area: 4 / 4 / span 1 / span 1;
   }
 
-  /*red yellow green*/
 
   .m-ryg__red {
     background: var(--red-10);
@@ -354,7 +465,6 @@
     grid-area: 3 / 10 / span 1 / span 1;
   }
 
-  /*red detail*/
 
   .m-shadow__top {
     background: var(--red-12);
@@ -371,7 +481,6 @@
     grid-area: 7 / 2 / span 1 / span 6;
   }
 
-  /*big screen*/
 
   .m-big-screen__bg {
     background: var(--gray-4);
@@ -403,7 +512,6 @@
     grid-area: 19 / 4 / span 1 / span 8;
   }
 
-  /*mauve blue*/
 
   .m-mauve-blue__mauve {
     background: var(--pink-9);
@@ -415,7 +523,6 @@
     grid-area: 21 / 7 / span 1 / span 2;
   }
 
-  /*bottom buttons, left*/
 
   .m-buttons-left__black {
     background: black;
@@ -442,7 +549,6 @@
     grid-area: 23 / 10 / span 1 / span 1;
   }
 
-  /*middle detail*/
 
   .m-middle__column {
     background: var(--red-12);
@@ -468,5 +574,5 @@
     background: black;
     grid-area: 23 / 14 / span 1 / span 1;
   }
-
+  */
 }
