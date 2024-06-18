@@ -8,5 +8,6 @@
 5. a cool background?✔️
 6. cleanup✔️
 7. further button functionality✔️
+8. refactor js
 
 Fikir: Pelin Karakoca
